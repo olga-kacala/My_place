@@ -1,6 +1,5 @@
-import "./Snake.module.css";
 
-export function Snake() {
+export const Snake = ():JSX.Element => {
   
   return (
     <h1>Snake</h1>

@@ -23,7 +23,7 @@ import { HashRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 
-import { AppProvider } from './providers/AppProvider';
+import { AppProvider } from './AppProvider';
 
 
 
