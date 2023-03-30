@@ -1,4 +1,4 @@
-// import classes from "./SingleCard.module.css";
+import classes from "./SingleCard.module.css";
 
 export const SingleCard = ({ card, handleChoice, flipped, disabled }):JSX.Element => {
   const handleClick = () => {
@@ -7,11 +7,15 @@ export const SingleCard = ({ card, handleChoice, flipped, disabled }):JSX.Elemen
     }
   };
   return (
-    <div className="card">
-      <div className={flipped ? "flipped" : ""}>
-        <img className="front" alt="Card Front" src={card.src} />
+    <div className={classes ["card"]}>
+      <div className={
+      flipped 
+      ? classes["flipped"] 
+      : classes [""]
+      }>
+        <img className={classes ["front"]} alt="Card Front" src={card.src} />
         <img
-          className="back"
+          className={classes ["back"]}
           alt="Card back"
           src={"/img/cover.png"}
           onClick={handleClick}
