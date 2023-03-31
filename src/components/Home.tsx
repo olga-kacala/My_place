@@ -6,9 +6,7 @@ import {Snake} from "./Snake";
 export const Home = (): ReactJSXElement => {
     return (
 <div>
-    <h1>hello</h1>
-    <Memory/>
-    <Snake/> 
+    
 </div>
     )
 }
