@@ -6,8 +6,10 @@ export const Navbar = (): JSX.Element => {
   return (
     <div className={classes ["Nav"]}>
       <Link to='/'>Home</Link>
+      <div>
       <Link to='memory'>Memory</Link>
-    <Link to='snake'>Snake</Link>
+        </div>
+    <div><Link to='snake'>Snake</Link></div>
     </div>
   );
 };
