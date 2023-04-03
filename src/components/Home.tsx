@@ -22,7 +22,7 @@ export const Home = (): ReactJSXElement => {
         onClick={() => navigate("/snake")}
       /></div>
       
-    <a href="/img/OLGA_KACALA_CV_ENG.pdf" download="O_Kacala_CV.pdf">
+    <a href="/home/olga/Pulpit/My REPO/My_place/public/img/ OLGA_KACALA_CV_ENG.pdf" download="CV.pdf">
   Download CV
 </a>
 

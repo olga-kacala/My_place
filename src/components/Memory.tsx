@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import classes from './Memory.module.css';
 import { SingleCard } from "./SingleCard";
+import { Card } from './Providers';
 
 const cardImages = [
     { src: "/img/Pola.png", matched: false },
@@ -11,12 +12,13 @@ const cardImages = [
     { src: "/img/catInGlasses.png", matched: false },
   ];
 
+
 export const Memory = (): JSX.Element => {
 
-const [cards, setCards] = useState([]);
+const [cards, setCards] = useState<Card[]>([]);
   const [turns, setTurns] = useState(0);
-  const [choiceOne, setChoiceOne] = useState(null);
-  const [choiceTwo, setChoiceTwo] = useState(null);
+  const [choiceOne, setChoiceOne] = useState<Card | null>(null);
+  const [choiceTwo, setChoiceTwo] = useState<Card | null>(null);
   const [disabled, setDisabled] = useState(false);
 
   const shuffleCards = () => {
@@ -29,7 +31,7 @@ const [cards, setCards] = useState([]);
     setTurns(0);
   };
 
-  const handleChoice = (card) => {
+  const handleChoice = (card: Card) => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
   };
 
