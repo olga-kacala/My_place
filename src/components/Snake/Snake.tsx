@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Canvas } from '../Canvas/Canvas';
 import classes from './Snake.module.css';
 
 interface GameProps{}
 
 export const Snake: React.FC<GameProps> = ({}) => {
+
+  const canvaRef = useRef<HTMLCanvasElement>(null);
   
   const draw = (ctx: CanvasRenderingContext2D) => {
 
@@ -15,6 +17,7 @@ export const Snake: React.FC<GameProps> = ({}) => {
     <div className={classes ['Snake']}>
    
     <Canvas
+    ref={canvaRef}
     draw={draw}/>
     </div>
     </div>
