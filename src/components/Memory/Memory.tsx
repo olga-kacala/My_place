@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import classes from './Memory.module.css';
 import { SingleCard } from "./SingleCard";
-import { Card } from './Providers';
+import { Card } from '../Providers';
 
 const cardImages = [
     { src: "/img/Pola.png", matched: false },

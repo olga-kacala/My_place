@@ -1,5 +1,5 @@
 import classes from "./SingleCard.module.css";
-import {Props} from "./Providers";
+import {Props} from "../Providers";
 
 
 export const SingleCard = ({ card, handleChoice, flipped, disabled }:Props):JSX.Element => {

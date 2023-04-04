@@ -1,7 +1,7 @@
 import classes from "./App.module.css";
 import { Routes, Route} from "react-router-dom";
-import { Memory } from "./components/Memory";
-import {Snake} from "./components/Snake";
+import { Memory } from "./components/Memory/Memory";
+import {Snake} from "./components/Snake/Snake";
 import {Navbar} from "./components/Navbar";
 import {Home} from "./components/Home";
 
