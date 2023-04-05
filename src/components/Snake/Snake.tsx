@@ -1,15 +1,17 @@
 import React, { useRef } from 'react';
 import { Canvas } from '../Canvas/Canvas';
 import classes from './Snake.module.css';
+import {GameLogic} from './GameLogic';
+import {Draw} from '../Draw/Draw';
 
 interface GameProps{}
 
 export const Snake: React.FC<GameProps> = ({}) => {
 
   const canvaRef = useRef<HTMLCanvasElement>(null);
-  
-  const draw = (ctx: CanvasRenderingContext2D) => {
-
+  const {snakeBody} = GameLogic();
+  const drawGame = (ctx: CanvasRenderingContext2D) => {
+Draw({ctx, snakeBody})
   }
   return (
     <div>
@@ -18,7 +20,7 @@ export const Snake: React.FC<GameProps> = ({}) => {
    
     <Canvas
     ref={canvaRef}
-    draw={draw}/>
+    draw={drawGame}/>
     </div>
     </div>
   );

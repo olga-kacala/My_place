@@ -28,7 +28,7 @@ export const Canvas = forwardRef<HTMLCanvasElement, CanvasProps>(
       return null;
     }
     return (
-        <canvas className={classes["Canvas"]} ref={canvasRef} {...props} />
+        <canvas className={classes["Canvas"]} ref={canvasRef as any} {...props} />
    
     );
   }
