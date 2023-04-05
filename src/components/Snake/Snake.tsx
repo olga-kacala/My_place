@@ -1,16 +1,16 @@
 import React, { useRef } from "react";
 import { Canvas } from "../Canvas/Canvas";
 import classes from "./Snake.module.css";
-import { GameLogic } from "./GameLogic";
-import { Draw } from "../Draw/Draw";
+import { useGameLogic } from "./GameLogic";
+import { draw } from "../Draw/Draw";
 
 interface GameProps {}
 
 export const Snake: React.FC<GameProps> = ({}) => {
   const canvaRef = useRef<HTMLCanvasElement>(null);
-  const { snakeBody, onKeyDownHandler } = GameLogic();
+  const { snakeBody, onKeyDownHandler } = useGameLogic();
   const drawGame = (ctx: CanvasRenderingContext2D) => {
-    Draw({ ctx, snakeBody });
+    draw({ ctx, snakeBody });
   };
   return (
     <div>
