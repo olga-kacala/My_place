@@ -23,6 +23,7 @@ export const Canvas = forwardRef<HTMLCanvasElement, CanvasProps>(
         return;
       }
       draw(context);
+      return ()=>context.clearRect(0,0, window.innerWidth, 400)
     }, [draw, canvasRef]);
     if (!canvasRef) {
       return null;
