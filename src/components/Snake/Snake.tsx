@@ -7,8 +7,11 @@ import { draw } from "../Draw/Draw";
 interface GameProps {}
 
 export const Snake: React.FC<GameProps> = ({}) => {
-  const canvaRef = useRef<HTMLCanvasElement>(null);
-  const { snakeBody, onKeyDownHandler } = useGameLogic();
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const { snakeBody, onKeyDownHandler } = useGameLogic({
+    canvasHeight: canvasRef.current?.height,
+    canvasWidth: canvasRef.current?.width,
+  });
   const drawGame = (ctx: CanvasRenderingContext2D) => {
     draw({ ctx, snakeBody });
   };
@@ -20,7 +23,7 @@ export const Snake: React.FC<GameProps> = ({}) => {
         onKeyDown={onKeyDownHandler}
         tabIndex={0}
       >
-        <Canvas ref={canvaRef} draw={drawGame} />
+        <Canvas ref={canvasRef} draw={drawGame} />
       </div>
     </div>
   );

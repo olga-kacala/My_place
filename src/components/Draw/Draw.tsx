@@ -5,9 +5,10 @@ interface DrawArgs {
   snakeBody: Position[];
 }
 
-const SEGMENT_SIZE = 5;
+export const SEGMENT_SIZE = 5;
 
-export const draw = ({ ctx, snakeBody }: DrawArgs) => {
+export const draw = ({ ctx, snakeBody }: DrawArgs) => { 
+  // console.log(snakeBody);
   ctx.fillStyle = 'red';
   snakeBody.forEach((segment) =>
     ctx.fillRect(segment.x, segment.y, SEGMENT_SIZE, SEGMENT_SIZE)
