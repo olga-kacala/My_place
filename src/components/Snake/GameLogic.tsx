@@ -199,9 +199,9 @@ export const useGameLogic = ({
   };
 
   UseInterval(
-    moveSnake, 
-   gameState === GameState.RUNNING ? movementSpeed : null,
-    );
+    moveSnake,
+    gameState === GameState.RUNNING ? movementSpeed : null
+  );
 
   return {
     snakeBody,
