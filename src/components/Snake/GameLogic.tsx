@@ -4,6 +4,7 @@ import { UseInterval } from "../Utils/UseInterval";
 import { createSnakeMovement } from "./Movement";
 import { randomPositionOnGrid } from "./RandomPositionOnGrid";
 import { willSnakeHitTheFood } from "./Movement";
+import { hasSnakeEatenItself } from "./Movement";
 
 export interface Position {
   x: number;
@@ -93,7 +94,6 @@ export const useGameLogic = ({
         }
         break;
     }
-    console.log(event.code);
   };
 
   const moveSnake = () => {
@@ -109,8 +109,6 @@ export const useGameLogic = ({
           }
           break;
         case Direction.DOWN:
-          // console.log('SnakeHead', snakeHeadPosition.y);
-          // console.log('Cnvas Height', canvasHeight);
           if (
             canvasHeight &&
             snakeHeadPosition.y < canvasHeight - SEGMENT_SIZE
@@ -142,6 +140,12 @@ export const useGameLogic = ({
           }
           break;
       }
+
+      if(snakeBodyAfterMovement) {
+        const isGameOver = hasSnakeEatenItself(snakeBodyAfterMovement);
+        if(isGameOver){
+        console.log("Game Over")
+        }}
 
       if (
         direction !== undefined &&

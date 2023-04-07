@@ -9,7 +9,11 @@ export const Home = (): ReactJSXElement => {
 
 
   return (
+    <>
+    <h1>Hello</h1>
+    <h2>So, you want to play a little game?</h2>
     <div className={classes ["Home"]}>
+     
         <div><img
         alt="Card back"
         src={"/img/cover.png"}
@@ -28,5 +32,6 @@ export const Home = (): ReactJSXElement => {
 
     
     </div>
+    </>
   );
 };

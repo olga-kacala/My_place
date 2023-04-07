@@ -6,8 +6,11 @@ body {
   margin: 0;
   font-size: 1.7em;
   text-align: center;
-
-  background: #EFB9AD;
+  background: #0B0C10;
   color: #fff;
+}
+
+h1 {
+  color: #66FCF1;
 }
 
