@@ -11,7 +11,7 @@ export const Home = (): ReactJSXElement => {
         <h1 className={classes["title"]}>Hello</h1>
         <h2>So, you want to play a little game?</h2>
       </div>
-      <div className={classes["Home"]}>
+      <div className={classes["imageContainer"]}>
         <img
           alt="Card back"
           src={"/img/cover.png"}
@@ -20,16 +20,17 @@ export const Home = (): ReactJSXElement => {
         <a href="https://github.com/olga-kacala">
           <img alt="GitHub" src={"/img/GitHub.png"} />
         </a>
+         <a href="https://www.linkedin.com/in/olga-kacala/">
+          <img alt="LinkedIn" src={"img/LinkedIn.png"} />
+        </a>
         <img
           alt="Snake"
           src={"/img/snake.png"}
           onClick={() => navigate("/snake")}
         />
-        <a href="https://www.linkedin.com/in/olga-kacala/">
-          <img alt="LinkedIn" src={"img/LinkedIn.png"} />
-        </a>
+       
         <a
-          href="/home/olga/Pulpit/My REPO/My_place/public/img/ OLGA_KACALA_CV_ENG.pdf"
+          href="/img/OLGA_KACALA_CV_ENG.pdf"
           download="CV.pdf"
         >
           Download CV
