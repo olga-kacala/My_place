@@ -12,6 +12,11 @@ export const Home = (): ReactJSXElement => {
     <>
     <h1>Hello</h1>
     <h2>So, you want to play a little game?</h2>
+    <div>
+      <img alt="relax" 
+       src={"/img/relax.png"}
+       />
+    </div>
     <div className={classes ["Home"]}>
      
         <div><img
