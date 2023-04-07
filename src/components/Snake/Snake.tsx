@@ -20,8 +20,8 @@ export const Snake: React.FC<GameProps> = ({}) => {
   const onGameOver = () => setGameState(GameState.GAME_OVER);
 
   const { snakeBody, onKeyDownHandler, foodPosition, resetGameState} = useGameLogic({
-    canvasHeight: canvasRef.current?.height,
-    canvasWidth: canvasRef.current?.width,
+    canvasHeight: 150,
+    canvasWidth: 300,
     onGameOver,
     gameState,
   });
@@ -31,6 +31,7 @@ export const Snake: React.FC<GameProps> = ({}) => {
   return (
     <div>
       <h1>Snake it</h1>
+      <h2>{`Your score: ${(snakeBody.length - 1) *10}`}</h2>
       <div
         className={classes["Snake"]}
         onKeyDown={onKeyDownHandler}
@@ -41,7 +42,7 @@ export const Snake: React.FC<GameProps> = ({}) => {
           <button onClick={() => {
             setGameState(GameState.RUNNING);
             resetGameState();
-          }}>Play Again</button>
+          }}>GAME OVER Play Again</button>
         ) : <button onClick={()=> {
           setGameState(gameState === GameState.RUNNING ? GameState.PAUSE : GameState.RUNNING)
         }}>{gameState === GameState.RUNNING ? 'Pause' : 'Play'} </button>} 
