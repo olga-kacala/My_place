@@ -20,7 +20,7 @@ export const Home = (): ReactJSXElement => {
         <a href="https://github.com/olga-kacala">
           <img alt="GitHub" src={"/img/GitHub.png"} />
         </a>
-         <a href="https://www.linkedin.com/in/olga-kacala/">
+        <a href="https://www.linkedin.com/in/olga-kacala/">
           <img alt="LinkedIn" src={"img/LinkedIn.png"} />
         </a>
         <img
@@ -28,12 +28,8 @@ export const Home = (): ReactJSXElement => {
           src={"/img/snake.png"}
           onClick={() => navigate("/snake")}
         />
-       
-        <a
-          href="/img/OLGA_KACALA_CV_ENG.pdf"
-          download="CV.pdf"
-        >
-          Download CV
+        <a href="/img/OLGA_KACALA_CV_ENG.pdf" download="CV.pdf">
+          <button> Download my CV</button>
         </a>
       </div>
     </>

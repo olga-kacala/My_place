@@ -69,7 +69,7 @@ const [cards, setCards] = useState<Card[]>([]);
 	return (
 		<div className={classes ["App"]}>
 			<h1>Memory Match</h1>
-      <button onClick={shuffleCards}>New Game</button>
+      <p>Turns:{turns}</p>
       <div className={classes["cardGrid"]}>
         {cards.map((card) => (
           <SingleCard
@@ -81,7 +81,7 @@ const [cards, setCards] = useState<Card[]>([]);
           />
         ))}
       </div>
-      <p>Turns:{turns}</p>
+      <button onClick={shuffleCards}>New Game</button>
 		</div>
 	);
 };
