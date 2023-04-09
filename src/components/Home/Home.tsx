@@ -1,6 +1,7 @@
 import { ReactJSXElement } from "@emotion/react/types/jsx-namespace";
 import { useNavigate } from "react-router-dom";
 import classes from "./Home.module.css";
+import {Footer} from "../Footer/Footer";
 
 export const Home = (): ReactJSXElement => {
   const navigate = useNavigate();
@@ -28,10 +29,9 @@ export const Home = (): ReactJSXElement => {
           src={"/img/snake.png"}
           onClick={() => navigate("/snake")}
         />
-        <a href="/img/OLGA_KACALA_CV_ENG.pdf" download="CV.pdf">
-          <button> Download my CV</button>
-        </a>
       </div>
+      <Footer/>
     </>
+   
   );
 };

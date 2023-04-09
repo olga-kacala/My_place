@@ -6,6 +6,7 @@ import {Navbar} from "./components/Navbar/Navbar";
 import {Home} from "./components/Home/Home";
 
 
+
 function App() {
   
 
@@ -17,6 +18,7 @@ function App() {
 <Route path="/memory" element={<Memory/>}/>
 <Route path="/snake" element={<Snake/>}/> 
 </Routes>
+
     </div>
   );
 }
