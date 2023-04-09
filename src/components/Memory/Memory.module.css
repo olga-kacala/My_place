@@ -1,9 +1,12 @@
 .App {
     max-width: 860px;
-    margin: 40px auto;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
   }
   
   .cardGrid {
+    justify-content: center;
     margin-top: 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

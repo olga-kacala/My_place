@@ -1,5 +1,6 @@
 .card {
   position: relative;
+ 
 }
 
 img {
@@ -13,6 +14,8 @@ img {
   transform: rotateY(90deg);
   position: absolute;
   border: 2px solid white;
+  width: 200px;
+  height: 200px;
 }
 
 .flipped .front {
@@ -24,6 +27,8 @@ img {
   transition: all ease-in 0.2s;
   transition-delay: 0.2s;
   border: 2px solid #558B83;;
+  width: 200px;
+  height: 200px;
 }
 
 .flipped .back {
