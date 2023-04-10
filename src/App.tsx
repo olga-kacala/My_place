@@ -5,11 +5,8 @@ import {Snake} from "./components/Snake/Snake";
 import {Navbar} from "./components/Navbar/Navbar";
 import {Home} from "./components/Home/Home";
 
-
-
 function App() {
   
-
   return (
     <div className={classes ["App"]}>
 <Navbar/>

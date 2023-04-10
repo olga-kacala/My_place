@@ -1,21 +1,19 @@
-import { useState, useEffect } from 'react';
-import classes from './Memory.module.css';
+import { useState, useEffect } from "react";
+import classes from "./Memory.module.css";
 import { SingleCard } from "./SingleCard";
-import { Card } from '../Providers';
+import { Card } from "../Providers";
 
 const cardImages = [
-    { src: "/img/Pola.png", matched: false },
-    { src: "/img/cactus.png", matched: false },
-    { src: "/img/banana.png", matched: false },
-    { src: "/img/noisyPola.png", matched: false },
-    { src: "/img/cat.png", matched: false },
-    { src: "/img/catInGlasses.png", matched: false },
-  ];
-
+  { src: "/img/Pola.png", matched: false },
+  { src: "/img/cactus.png", matched: false },
+  { src: "/img/banana.png", matched: false },
+  { src: "/img/noisyPola.png", matched: false },
+  { src: "/img/cat.png", matched: false },
+  { src: "/img/catInGlasses.png", matched: false },
+];
 
 export const Memory = (): JSX.Element => {
-
-const [cards, setCards] = useState<Card[]>([]);
+  const [cards, setCards] = useState<Card[]>([]);
   const [turns, setTurns] = useState(0);
   const [choiceOne, setChoiceOne] = useState<Card | null>(null);
   const [choiceTwo, setChoiceTwo] = useState<Card | null>(null);
@@ -65,10 +63,10 @@ const [cards, setCards] = useState<Card[]>([]);
   useEffect(() => {
     shuffleCards();
   }, []);
-	
-	return (
-		<div className={classes ["App"]}>
-			<h1>Memory Match</h1>
+
+  return (
+    <div className={classes["App"]}>
+      <h1>Memory Match</h1>
       <h2>Turns:{turns}</h2>
       <div className={classes["cardGrid"]}>
         {cards.map((card) => (
@@ -82,7 +80,6 @@ const [cards, setCards] = useState<Card[]>([]);
         ))}
       </div>
       <button onClick={shuffleCards}>New Game</button>
-		</div>
-	);
+    </div>
+  );
 };
-
