@@ -4,6 +4,7 @@ import { Memory } from "./components/Memory/Memory";
 import {Snake} from "./components/Snake/Snake";
 import {Navbar} from "./components/Navbar/Navbar";
 import {Home} from "./components/Home/Home";
+import {Login} from "./components/Login/Login";
 
 function App() {
   
@@ -11,6 +12,7 @@ function App() {
     <div className={classes ["App"]}>
 <Navbar/>
 <Routes>
+<Route path="/login" element={<Login/>} />
 <Route path="/" element={<Home/>}/>
 <Route path="/memory" element={<Memory/>}/>
 <Route path="/snake" element={<Snake/>}/> 

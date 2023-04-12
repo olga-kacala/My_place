@@ -6,6 +6,13 @@ import { Footer } from "../Footer/Footer";
 export const Home = (): ReactJSXElement => {
   const navigate = useNavigate();
 
+  // for (var i=0; i<3; i++) {
+  //   setTimeout(function() {
+  //     alert(i);
+  //   }, 1000+i);
+  // }
+  
+
   return (
     <>
       <div className={classes["inviteBox"]}>
