@@ -35,3 +35,22 @@ img {
   transform: rotateY(90deg);
   transition-delay: 0s;
 }
+
+@media screen and (max-width:750px){
+  .card {
+    display: flex;
+    display: flex;
+    justify-content: center;
+  }
+
+  .front {
+    width:100px;
+    height: 100px;
+  }
+
+  .card .back {
+    width:100px;
+    height: 100px;
+  }
+
+}
