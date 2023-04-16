@@ -26,3 +26,46 @@ img {
 h2 {
   margin: 0;
 }
+
+@media screen and (max-width: 750px) {
+
+.homeContainer {
+display: flex;
+text-align: center;
+margin: 0;
+flex-direction: column;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+
+.imageContainer > img:nth-child(1),
+.imageContainer > a:nth-child(1) {
+  order: 1;
+}
+
+.imageContainer > img:nth-child(2),
+.imageContainer > a:nth-child(2) {
+  order: 3;
+}
+
+.imageContainer > img:nth-child(3),
+.imageContainer > a:nth-child(3) {
+  order: 4;
+}
+
+.imageContainer > img:nth-child(4),
+.imageContainer > a:nth-child(4) {
+  order: 2;
+}
+
+button {
+  width: auto;
+}
+}
+  
