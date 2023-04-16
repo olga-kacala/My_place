@@ -7,7 +7,7 @@ export const Home = (): ReactJSXElement => {
   const navigate = useNavigate();
 
   return (
-    <>
+    <div className={classes['homeContainer']}>
       <div className={classes["inviteBox"]}>
         <h1>Hello</h1>
         <h2>So, you want to play a little game?</h2>
@@ -31,6 +31,6 @@ export const Home = (): ReactJSXElement => {
         />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
