@@ -13,3 +13,14 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
   }
+
+  @media screen and (max-width: 750px) {
+    .cardGrid {
+      justify-content: center;
+      margin-top: 0px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 3px;
+    }
+
+  }
