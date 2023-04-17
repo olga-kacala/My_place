@@ -9,3 +9,14 @@
     border-radius: 50%;
   }
 
+@media screen and (max-width:750px) {
+  .Nav {
+    margin: 20px 20px 0 20px;
+  }
+  .NavPic {
+    width: 80px;
+    height: 80px;
+  }
+  
+}
+
