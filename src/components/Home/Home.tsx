@@ -15,18 +15,18 @@ export const Home = (): ReactJSXElement => {
       <div className={classes["imageContainer"]}>
         <img
           alt="Card back"
-          src={"/img/cover.png"}
+          src={"../img/cover.png"}
           onClick={() => navigate("/memory")}
         />
         <a href="https://github.com/olga-kacala">
-          <img alt="GitHub" src={"/img/GitHub.png"} />
+          <img alt="GitHub" src={"../img/GitHub.png"} />
         </a>
         <a href="https://www.linkedin.com/in/olga-kacala/">
-          <img alt="LinkedIn" src={"img/LinkedIn.png"} />
+          <img alt="LinkedIn" src={"../img/LinkedIn.png"} />
         </a>
         <img
           alt="Snake"
-          src={"/img/snake.png"}
+          src={"../img/snake.png"}
           onClick={() => navigate("/snake")}
         />
       </div>
