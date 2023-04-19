@@ -1,0 +1,16 @@
+.Snake {
+    display: flex;
+    justify-content: center;
+    height: 460px;
+    align-items: center;
+    outline: none;
+    flex-direction: column;
+    background:#0B0C10;
+}
+
+@media screen and (max-width:750px) {
+    .Snake {
+    height: 400px;
+    }
+ 
+}
