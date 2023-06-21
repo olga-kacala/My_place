@@ -14,17 +14,19 @@ export const Home = (): ReactJSXElement => {
       </div>
       <div className={classes["imageContainer"]}>
         <img
+        title="Let's play memory"
           alt="Card back"
           src={"/img/cover.png"}
           onClick={() => navigate("/memory")}
         />
-        <a href="https://github.com/olga-kacala">
-          <img alt="GitHub" src={"/img/GitHub.png"} />
+        <a href="https://github.com/olga-kacala" target="_blank">
+          <img title="My GH" alt="GitHub" src={"/img/GitHub.png"} />
         </a>
-        <a href="https://www.linkedin.com/in/olga-kacala/">
-          <img alt="LinkedIn" src={"img/LinkedIn.png"} />
+        <a href="https://www.linkedin.com/in/olga-kacala/" target="_blank">
+          <img title="My LinkedIn" alt="LinkedIn" src={"img/LinkedIn.png"} />
         </a>
         <img
+        title="Let's play snake"
           alt="Snake"
           src={"/img/snake.png"}
           onClick={() => navigate("/snake")}
