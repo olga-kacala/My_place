@@ -38,7 +38,7 @@ export const Snake: React.FC<GameProps> = ({}) => {
         tabIndex={0}
       >
         <Canvas ref={canvasRef} draw={drawGame} />
-        <p>Pro tip: use w,s,a,d keys to move</p>
+        <p><strong>Pro tip</strong>: use <kbd>w,s,a,d</kbd> keys to move</p>
         {gameState === GameState.GAME_OVER ? (
           <button
             onClick={() => {
